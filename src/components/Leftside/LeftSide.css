@@ -1,0 +1,131 @@
+.left {
+    background: #001030;
+    color: white;
+    height: 100%; /* Make sure it takes the full height of the parent */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's dimensions */
+    overflow: hidden; /* Prevent any overflow */
+}
+
+.left-top {
+    padding: 20px;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav .mylogo {
+    max-width: 140px;
+    margin-left: 1.3vw;
+}
+
+.menu .search-logo {
+    max-height: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.ls-search {
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    background-color: #002670;
+    margin-top: 2vw;
+}
+
+.ls-search img {
+    width: 16px;
+    margin-left: 14vw;
+}
+
+.ls-search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 11px;
+}
+
+.ls-search input::placeholder {
+    color: #c8c8c8;
+}
+
+.ls-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Changed from scroll to auto */
+    flex-grow: 1; /* Ensures the list takes up remaining space */
+    margin-bottom: 10px; /* Adjusted margin-bottom */
+}
+
+.ls-list .profile-logo {
+    width: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.frnds-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.frnds-list div {
+    display: flex;
+    flex-direction: column;
+}
+
+.frnds-list span {
+    color: #9f9f9f;
+    font-size: 10px;
+}
+
+.frnds-list:hover {
+    background-color: #077EFF;
+}
+
+.frnds-list:hover span {
+    color: white;
+}
+.left .menu {
+    position: relative;
+}
+
+.menu-list {
+    display: none;
+    position: absolute; /* Use absolute positioning to prevent layout shift */
+    background: white;
+    top: 100%; /* Position the menu list below the menu icon */
+    right: 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.menu-list p {
+    margin: 5px 0;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.menu-list hr {
+    margin: 5px 0;
+}
+
+/* Show the menu-list when hovering over the menu-icon */
+.menu:hover .menu-list {
+    display: block;
+}
+
+.menu img.search-logo {
+    cursor: pointer;
+}
