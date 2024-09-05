@@ -1,0 +1,51 @@
+.login{
+    min-height: 100vh;
+    background: url(/background.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.login .mylogo{
+    width: max(20vw,200px);
+}
+.title{
+    font-weight: bold;
+    font-size: 23px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px 30px;
+    gap: 20px;
+    border-radius: 10px;
+    width: max(26vw,200px);
+}
+.login-form input{
+    padding: 10px;
+    outline: none;
+}
+.login-form button{
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 11px 20px;
+    cursor: pointer;
+}
+.login-terms{
+    display: flex;
+}
+.login-terms p{
+    margin-left: 1vw;
+    color: grey;
+    font-style: italic;
+}
+.login-toggle p{
+    color: gray;
+}
+.login-toggle span{
+    color: tomato;
+    cursor: pointer;
+}
